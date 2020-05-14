@@ -3,24 +3,25 @@ package com.sanvalero.torneo.model;
 import java.time.LocalDate;
 
 public class Jugador extends Usuario {
-	
 	private String numeroFicha;
-	private LocalDate fechaNacimiento;
-	private int goles;
-	private int tarjetasRojas;
-	private int tarjetasAmarillas;
-	private Equipo equipo;
-	
+	private LocalDate fechaNacimiento = null;
+	private int goles = 0;
+	private int tarjetasRojas = 0;
+	private int tarjetasAmarillas = 0;
+		
 	public Jugador(String nombreUsuario, String contraseña, String nombre, String apellidos, String direccion,
 			String telefono, String numeroFicha, LocalDate fechaNacimiento, int goles, int tarjetasRojas,
-			int tarjetasAmarillas, Equipo equipo) {
+			int tarjetasAmarillas) {
 		super(nombreUsuario, contraseña, nombre, apellidos, direccion, telefono);
 		this.numeroFicha = numeroFicha;
 		this.fechaNacimiento = fechaNacimiento;
 		this.goles = goles;
 		this.tarjetasRojas = tarjetasRojas;
 		this.tarjetasAmarillas = tarjetasAmarillas;
-		this.equipo = equipo;
+	}
+
+	public Jugador() {
+		super();
 	}
 
 	public String getNumeroFicha() {
@@ -63,12 +64,4 @@ public class Jugador extends Usuario {
 		this.tarjetasAmarillas = tarjetasAmarillas;
 	}
 
-	public Equipo getEquipo() {
-		return equipo;
-	}
-
-	public void setEquipo(Equipo equipo) {
-		this.equipo = equipo;
-	}
-	
 }

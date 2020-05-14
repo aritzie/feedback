@@ -2,18 +2,21 @@ package com.sanvalero.torneo.model;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.Scanner;
 
 public class Partido {
 	
 	private LocalDate fecha;
 	private LocalTime hora;
-	private String resultado;
-	private String observaciones;
-	private Arbitro arbitro;
-	private Campo campo;
+	private String resultado = " ";
+	private String observaciones =" ";
+	private Arbitro arbitro = null;
+	private Campo campo = null;
+	private Equipo equipo1 = null;
+	private Equipo equipo2 = null;
 	
 	public Partido(LocalDate fecha, LocalTime hora, String resultado, String observaciones, Arbitro arbitro,
-			Campo campo) {
+			Campo campo, Equipo equipo1, Equipo equipo2) {
 		super();
 		this.fecha = fecha;
 		this.hora = hora;
@@ -21,7 +24,15 @@ public class Partido {
 		this.observaciones = observaciones;
 		this.arbitro = arbitro;
 		this.campo = campo;
+		this.equipo1 = equipo1;
+		this.equipo2 = equipo2;
 	}
+	
+	public Partido() {
+		super();
+	}
+
+
 
 	public LocalDate getFecha() {
 		return fecha;
@@ -70,5 +81,30 @@ public class Partido {
 	public void setCampo(Campo campo) {
 		this.campo = campo;
 	}
+
+
+
+	public Equipo getEquipo1() {
+		return equipo1;
+	}
+
+
+
+	public void setEquipo1(Equipo equipo1) {
+		this.equipo1 = equipo1;
+	}
+
+
+
+	public Equipo getEquipo2() {
+		return equipo2;
+	}
+
+
+
+	public void setEquipo2(Equipo equipo2) {
+		this.equipo2 = equipo2;
+	}
+	
 	
 }

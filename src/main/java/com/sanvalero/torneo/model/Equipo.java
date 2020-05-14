@@ -22,6 +22,10 @@ public class Equipo {
 			this.categoria = categoria;
 			jugadores = new ArrayList<>();
 		}
+		
+		public Equipo() {
+			super();
+		}
 
 		public String getNombreEquipo() {
 			return nombreEquipo;

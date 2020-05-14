@@ -1,4 +1,7 @@
 *.class
 out
 traget
-*iml
+*.iml
+*.settings
+*.project
+*.classpath

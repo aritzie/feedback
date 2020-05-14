@@ -33,23 +33,50 @@ public class Trabajador extends Usuario{
 	}
 	
 	
-	public void resgistrarJugador(Jugador jugador) {
-
-	}
-	
-	public void resgistrarEquipo(Equipo equipo) {
+	public void resgistrarJugador() {
+		Scanner sc = new Scanner(System.in);
+		Jugador nuevoJugador = new Jugador();
+		System.out.println("Introduce el nombre del jugador: ");
+		nuevoJugador.setNombre(sc.nextLine());
+		System.out.println("Introduce los apellidos del jugador: ");
+		nuevoJugador.setApellidos(sc.nextLine());
+		System.out.println("Introduce la direccion del jugador: ");
+		nuevoJugador.setDireccion(sc.nextLine());
+		System.out.println("Introduce el telefono del jugador: ");
+		nuevoJugador.setTelefono(sc.nextLine());
+		System.out.println("Introduce el nº de ficha del jugador: ");
+		nuevoJugador.setNumeroFicha(sc.nextLine());
 		
 	}
 	
-	public void registrarPartido(Partido partido) {
-		
+	public void resgistrarEquipo() {
+		Scanner sc = new Scanner(System.in);
+		Equipo nuevoEquipo = new Equipo();
+		System.out.println("Introduce el nombre del equipo: ");
+		nuevoEquipo.setNombreEquipo(sc.nextLine());
+		System.out.println("Introduce el nombre del patrocinador: ");
+		nuevoEquipo.setPatrocinador(sc.nextLine());
+		System.out.println("Introduce el color de la primera equipación: ");
+		nuevoEquipo.setCamisetaPrimera(sc.nextLine());
+		System.out.println("Introduce el color de la segunda equipación: ");
+		nuevoEquipo.setCamisetaSegunda(sc.nextLine());
+		System.out.println("Introduce la categoría: ");
+		nuevoEquipo.setCategoria(sc.nextLine());
 	}
 	
-	public void registrarResultado(String resultado) {
-		
+	public void registrarPartido() {
+		Partido nuevoPartido = new Partido();
 	}
 	
-	public void añadirObservacio(String observacion) {
-		
+	public void registrarResultado(Partido partido) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Introduce el resultado: ");
+		partido.setResultado(sc.nextLine());
+	}
+	
+	public void añadirObservacio(Partido partido) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Introduce el resultado: ");
+		partido.setObservaciones(sc.nextLine());
 	}
 }

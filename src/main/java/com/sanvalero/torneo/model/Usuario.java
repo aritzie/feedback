@@ -19,13 +19,18 @@ public class Usuario {
 	public Usuario(String nombreUsuario, String contraseña, String nombre, String apellidos, String direccion,
 			String telefono) {
 		super();
-		this.nombreUsuario = nombreUsuario;
-		this.contraseña = contraseña;
+		this.nombreUsuario = "usuario";
+		this.contraseña = "1234";
 		this.nombre = nombre;
 		this.apellidos = apellidos;
 		this.direccion = direccion;
 		this.telefono = telefono;
 	}
+	
+	public Usuario() {
+		super();
+	}
+	
 	public String getNombreUsuario() {
 		return nombreUsuario;
 	}
