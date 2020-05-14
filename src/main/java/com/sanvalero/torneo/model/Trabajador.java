@@ -32,27 +32,24 @@ public class Trabajador extends Usuario{
 		this.antiguedad = antiguedad;
 	}
 	
-	public void registrarCampo() {
-		Campo registroCampo = new Campo(sc.nextLine(),sc.nextLine());
+	
+	public void resgistrarJugador(Jugador jugador) {
+
 	}
 	
-	/*public void resgistrarJugador () {
-		Jugador registroJugador = new Jugador();
-	}
-	
-	/**public void resgistrarEquipo {
+	public void resgistrarEquipo(Equipo equipo) {
 		
 	}
 	
-	public void registrarPartido {
+	public void registrarPartido(Partido partido) {
 		
 	}
 	
-	public void registrarResultado {
+	public void registrarResultado(String resultado) {
 		
 	}
 	
-	public void añadirObservacio {
+	public void añadirObservacio(String observacion) {
 		
-	}**/
+	}
 }
