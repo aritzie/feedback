@@ -1,6 +1,6 @@
 *.class
 out
-traget
+target
 *.iml
 *.settings
 *.project

@@ -6,8 +6,8 @@ import java.util.Scanner;
 
 public class Partido {
 	
-	private LocalDate fecha;
-	private LocalTime hora;
+	private LocalDate fecha = null;
+	private LocalTime hora = null;
 	private String resultado = " ";
 	private String observaciones =" ";
 	private Arbitro arbitro = null;

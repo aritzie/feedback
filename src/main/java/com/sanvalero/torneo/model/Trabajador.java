@@ -74,7 +74,7 @@ public class Trabajador extends Usuario{
 		partido.setResultado(sc.nextLine());
 	}
 	
-	public void añadirObservacio(Partido partido) {
+	public void añadirObservacion(Partido partido) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Introduce el resultado: ");
 		partido.setObservaciones(sc.nextLine());
